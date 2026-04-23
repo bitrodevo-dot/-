@@ -1,0 +1,9 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=8772542821:AAFuF6-bH_PoFfOzOSjAzgx2uErihcomB-U
+      - COBALT_API_URL=http://cobalt.railway.internal:9000
+    volumes:
+      - ./downloads:/root/instagram_downloads
